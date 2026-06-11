@@ -1,0 +1,146 @@
+.promo-section {
+  background-color: #b3aa9d;
+  padding: 90px 0;
+}
+
+.promo-container {
+  position: relative;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+}
+
+.promo-image-box {
+  width: 58%;
+  max-width: 760px;
+  border-radius: 26px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.promo-image {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  display: block;
+}
+
+.promo-card {
+  width: 56%;
+  max-width: 720px;
+  margin-left: auto;
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 70px 56px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.promo-card h2 {
+  font-size: 40px;
+  line-height: 1.15;
+  color: #111;
+  font-weight: 800;
+  margin-bottom: 34px;
+}
+
+.promo-card p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 26px;
+}
+
+.promo-credit span {
+  text-decoration: underline;
+}
+
+.promo-btn {
+  margin-top: 18px;
+  padding: 18px 34px;
+  border: 2px solid #555;
+  background-color: transparent;
+  color: #333;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.promo-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .promo-card {
+    width: 60%;
+    padding: 50px 40px;
+  }
+
+  .promo-card h2 {
+    font-size: 34px;
+  }
+
+  .promo-image {
+    height: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .promo-container {
+    position: static;
+    min-height: auto;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .promo-image-box {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .promo-image {
+    height: 420px;
+  }
+
+  .promo-card {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    padding: 40px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-section {
+    padding: 70px 0;
+  }
+
+  .promo-card h2 {
+    font-size: 28px;
+  }
+
+  .promo-card p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .promo-image {
+    height: 300px;
+  }
+
+  .promo-btn {
+    width: 100%;
+    max-width: 260px;
+    font-size: 15px;
+    padding: 16px 20px;
+  }
+}

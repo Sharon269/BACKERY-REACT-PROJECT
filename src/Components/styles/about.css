@@ -1,0 +1,140 @@
+.about-section {
+  background-color: #f3f3f3;
+  padding: 100px 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 620px;
+}
+
+.about-content h2 {
+  font-size: 55px;
+  line-height: 1.1;
+  color: #111;
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+
+.about-text {
+  font-size: 20px;
+  line-height: 2;
+  color: #333;
+  margin-bottom: 50px;
+  max-width: 620px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 38px 24px;
+}
+
+.about-item h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 24px;
+}
+
+.about-line {
+  width: 100%;
+  height: 1px;
+  background-color: #cfcfcf;
+}
+
+.about-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image-shape {
+  width: 100%;
+  max-width: 560px;
+  height: 560px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .about-content h2 {
+    font-size: 58px;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  .about-image-shape {
+    max-width: 480px;
+    height: 480px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 70px 0;
+  }
+
+  .about-content h2 {
+    font-size: 42px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 36px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-item h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .about-image-shape {
+    max-width: 340px;
+    height: 340px;
+  }
+}

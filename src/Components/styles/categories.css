@@ -1,0 +1,285 @@
+.categories-section {
+  position: relative;
+  /* margin-top: -120px; */
+  z-index: 3;
+}
+
+.categories-bg-top {
+  background-color: #b7afa3;
+  height: 220px;
+}
+
+.categories-bg-bottom {
+  background-color: #f4f4f1;
+  min-height: 1100px;
+}
+
+.categories-container {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.category-image-wrap {
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.category-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.category-card h3 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #111;
+  margin: 28px 0 18px;
+}
+
+.category-card p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #222;
+  max-width: 360px;
+}
+
+.categories-text-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  margin: 50px 0 100px;
+}
+
+.category-text-block h3 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 24px;
+}
+
+.category-text-block p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #222;
+  max-width: 360px;
+}
+
+.categories-bottom {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  padding-bottom: 80px;
+}
+
+.newsletter-box h2,
+.hours-box h2 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 26px;
+}
+
+.newsletter-box p,
+.hours-box p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #222;
+}
+
+.newsletter-box > p {
+  max-width: 620px;
+  margin-bottom: 32px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  height: 56px;
+  border: none;
+  outline: none;
+  background-color: #eceae8;
+  border-radius: 14px;
+  padding: 0 16px;
+  font-size: 18px;
+  color: #555;
+}
+
+.newsletter-form button {
+  height: 56px;
+  padding: 0 34px;
+  border: none;
+  border-radius: 14px;
+  background-color: #b1a79a;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-size: 32px;
+  color: #111;
+  flex-wrap: wrap;
+}
+
+.contact-links {
+  margin-bottom: 36px;
+}
+
+.contact-links p {
+  color: #a79f94;
+  text-decoration: underline;
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-size: 22px;
+}
+
+.working-hours {
+  margin-bottom: 36px;
+}
+
+.working-hours p {
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.hours-credit {
+  font-size: 18px;
+  color: #222;
+}
+
+.hours-credit span {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+@media (max-width: 1200px) {
+  .category-image-wrap {
+    height: 360px;
+  }
+
+  .category-card h3,
+  .category-text-block h3 {
+    font-size: 32px;
+  }
+
+  .newsletter-box h2,
+  .hours-box h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 992px) {
+  .categories-section {
+    margin-top: -80px;
+  }
+
+  .categories-bg-top {
+    height: 180px;
+  }
+
+  .categories-bg-bottom {
+    min-height: 1850px;
+  }
+
+  .categories-grid,
+  .categories-text-row,
+  .categories-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .categories-grid,
+  .categories-text-row {
+    gap: 36px;
+  }
+
+  .categories-bottom {
+    gap: 50px;
+  }
+
+  .category-image-wrap {
+    height: 340px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-section {
+    margin-top: -60px;
+  }
+
+  .categories-bg-top {
+    height: 140px;
+  }
+
+  .categories-bg-bottom {
+    min-height: 1900px;
+  }
+
+  .category-image-wrap {
+    height: 260px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .category-card h3,
+  .category-text-block h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .category-card p,
+  .category-text-block p,
+  .newsletter-box p,
+  .hours-box p {
+    font-size: 16px;
+  }
+
+  .newsletter-box h2,
+  .hours-box h2 {
+    font-size: 32px;
+  }
+
+  .contact-links p,
+  .working-hours p {
+    font-size: 18px;
+  }
+
+  .social-icons {
+    gap: 18px;
+    font-size: 28px;
+  }
+}

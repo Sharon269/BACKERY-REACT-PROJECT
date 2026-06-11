@@ -1,0 +1,104 @@
+.pastries-section {
+  background-color: #b7afa3;
+  padding: 90px 0 100px;
+}
+
+.pastries-heading {
+  text-align: center;
+  color: #ffffff;
+  font-size: 76px;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+
+.pastries-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.pastry-card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 28px 24px 34px;
+  text-align: center;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.pastry-image-wrap {
+  width: 260px;
+  height: 260px;
+  margin: 0 auto 26px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+.pastry-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pastry-card h3 {
+  font-size: 22px;
+  letter-spacing: 3px;
+  color: #111;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.pastry-card p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #222;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.pastry-card a {
+  font-size: 18px;
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+@media (max-width: 1200px) {
+  .pastries-heading {
+    font-size: 58px;
+  }
+
+  .pastries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pastries-section {
+    padding: 70px 0 80px;
+  }
+
+  .pastries-heading {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+
+  .pastries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pastry-image-wrap {
+    width: 220px;
+    height: 220px;
+  }
+
+  .pastry-card h3 {
+    font-size: 20px;
+  }
+
+  .pastry-card p {
+    font-size: 16px;
+  }
+}

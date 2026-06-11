@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 50000,
+    "image": "/images/laptop.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "phone",
+    "price": 25000,
+    "image": "/images/phone.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Headphones",
+    "price": 3000,
+    "image": "/images/headphones.webp"
+  },
+  {
+    "id": 4,
+    "name": "Watch",
+    "price": 5000,
+    "image": "/images/watch.webp"
+  }
+]
